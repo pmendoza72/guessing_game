@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>201 Guessing Game Demo</title>
-  <link rel="stylesheet" src="app.js" />
-</head>
-<body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-</body>
+  <head>
+    <title>About Me</title>
+  </head>
+  <body>
+    <h1>This is a bio about me</h1>
+
+    <script>
+      var userName = prompt ('What\'s your name?');
+      alert('Hello ' + userName + '. Thanks for coming to my site!')
+
+      // WE want to ask the user a question
+      // Take their answer as input; stored in a var
+      // Validate that their answer matches my answer
+      // Depending on True or False, provide feedback
+
+      var answerOne = prompt('What country was I born in? Hint: South America');
+      var myAnswerOne = 'Chile';
+
+      if(answerOne === myAnswerOne) {
+        alert('Wow! You got it right. I was born in Chile.')
+        // Do something
+      } else {
+        alert('Sorry, that\'s wrong')
+        // Do something else
+      }
+
+      // Question number 2
+      // User input must accept either y/n or yes/no responses
+      // With either .toUpperCase() or .toLowerCase() used to validate input
+
+      var answerTwo = prompt('Is my favorite color blue?');
+      var myAnswerTwo = 'Yes';
+      var myAnswerThree = 'Y';
+
+      if(answerTwo.toLowerCase() === myAnswerTwo.toLowerCase() && myAnswerThree.toLowerCase()) {
+        alert('You got it right.')
+      } else {
+        alert('Sorry, that\'s wrong')
+      }
+    </script>
+  </body>
+
 </html>
