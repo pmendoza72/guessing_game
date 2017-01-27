@@ -5,34 +5,63 @@ Selector {
 } */
 
 /* By Element */
+
 header {
   text-align: center;
-  font-size: 26px;
+  font-family: 'Lato';
+  font-size: 50px;
   width: 100%;
+  border-bottom: 2px solid #b3b3b3;
+  padding-bottom: 20px;
 }
+
+header span {
+  font-family: 'Open-sans', Arial;
+  font-weight: normal;
+  color: #565656;
+  font-size: 26px;
+  display: block;
+}
+
+header a {
+  font-size: 17px;
+  font-weight: bold;
+}
+
 body {
-  font-size: 14px;
+  font-family: 'Lato';
+  font-size: 16px;
+}
+
+main {
+  padding-left: 15px;
+  padding-bottom: 40px;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 30px;
 }
+
+h1, h2, h3, h4 {
+  margin-top: 30px;
+}
+
 h2 {
-  font-size: 20px;
+  font-size: 26px;
 }
+
 h3 {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 /* By Class name */
+
 .classOne {
 
 }
 
 /* By Id */
-#idOne {
 
-}
 #page-wrap {
 width: 100%;
 margin: 0 auto;
