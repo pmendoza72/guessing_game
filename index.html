@@ -24,22 +24,24 @@
       </ul>
       <h3>Desktop End User Support</h3>
       <span class="subTitle">City of Seattle</span>
-      <p>Duties</p>
-      <p>Duties</p>
-      <p>Duties</p>
+      <p>2nd Tier Desktop Support</p>
+      <p>Hardware and software support for City of Seattle departments.</p>
+      <p>Technical support service for Mayor's Office.</p>
       <h3>Service Desk</h3>
       <span class="subTitle">City of Seattle</span>
-      <p>Duties</p>
-      <p>Duties</p>
-      <p>Duties</p>
+      <p>1st Tier technical support.</p>
+      <p>Remote desktop support for City of Seattle departments.</p>
+      <p>Troubleshoot computer and peripheral issues via telephone and email.</p>
       <h3>Technical Specialist</h3>
       <span class="subTitle">El Centro de la Raza</span>
-      <p>Duties</p>
-      <p>Duties</p>
-      <p>Duties</p>
+      <p>Network administrator supporting servers and workstations.</p>
+      <p>Manage email accounts and user profiles.</p>
+      <p>Worked with vendors in maintaining hardware and software support.</p>
       <h2>Volunteer Experience</h2>
-      <p>Lorem ipsum</p>
+      <p>Board Member: <em>El Centro de la Raza</em></p>
+      <p>Board Member: <em>La Barra Fuerza Verde</em></p>
       <h2>Projects</h2>
+      <p>Click button to view projects.</p>
       <button onclick="myFunction()">Guessing Game</button>
       <script>
       function myFunction() {
@@ -89,11 +91,26 @@
 
         var answerFour = prompt('Is my favorite color blue?');
 
-        if(answerFour.toLowerCase() === 'yes' || answerFour.toLowerCase() === 'y' || answerFour.toLowerCase() === 'yes.') {
+        if(answerFour.toLowerCase() === 'yes' || answerFour.toLowerCase() === 'y') {
           alert('You guessed right!')
         } else {
           alert('Sorry, that\'s wrong')
         }
+
+
+
+        var myFavColor = prompt('What is my favorite color?');
+        var favColor = ['blue', 'green', 'red'];
+
+
+        if (favColor.indexOf(myFavColor.toLowerCase()) ===  -1) {
+        	alert('Not close.')
+        } else if (favColor.indexOf(myFavColor.toLowerCase()) === 0) {
+        	alert('You got it.')
+        } else {
+        	alert('You are close.')
+        }
+
       }
       </script>
     </main>
