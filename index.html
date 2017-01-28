@@ -17,11 +17,9 @@
       <h2>Work Experience</h2>
       <h3>Web Developer</h3>
       <span class="subTitle">City of Seattle</span>
-      <ul>
-        <li>Create, maintain and update City of Seattle webpages.</li>
-        <li>Manage Content Management System.</li>
-        <li>Manage redesign of department websites.</li>
-      </ul>
+      <p>Create, maintain and update City of Seattle webpages.</p>
+      <p>Manage Content Management System.</p>
+      <p>Manage redesign of department websites.</p>
       <h3>Desktop End User Support</h3>
       <span class="subTitle">City of Seattle</span>
       <p>2nd Tier Desktop Support</p>
@@ -45,49 +43,49 @@
       <button onclick="myFunction()">Guessing Game</button>
       <script>
       function myFunction() {
-      var userName = prompt ('What\'s your name?');
-      alert('Hello ' + userName + '. Thanks for coming to my site!')
+        var userName = prompt ('What\'s your name?');
+        alert('Hello ' + userName + '. Thanks for coming to my site!')
 
-      // WE want to ask the user a question
-      // Take their answer as input; stored in a var
-      // Validate that their answer matches my answer
-      // Depending on True or False, provide feedback
+        // WE want to ask the user a question
+        // Take their answer as input; stored in a var
+        // Validate that their answer matches my answer
+        // Depending on True or False, provide feedback
 
-      var answerOne = prompt('What country was I born in? Hint: South America');
-      var myAnswerOne = 'CHILE';
+        var answerOne = prompt('What country was I born in? Hint: South America');
+        var myAnswerOne = 'CHILE';
 
-      if(answerOne.toUpperCase() === myAnswerOne) {
-        alert('Wow! You got it right. I was born in Chile.')
-        // Do something
-      } else {
-        alert('Sorry, that\'s wrong')
-        // Do something else
-      }
+        if(answerOne.toUpperCase() === myAnswerOne) {
+          alert('Wow! You got it right. I was born in Chile.')
+          // Do something
+        } else {
+          alert('Sorry, that\'s wrong')
+          // Do something else
+        }
 
-      var answerTwo = prompt('What\'s my first language?');
-      var myAnswerTwo = 'SPANISH';
+        var answerTwo = prompt('What\'s my first language?');
+        var myAnswerTwo = 'SPANISH';
 
-      if(answerTwo.toUpperCase() === myAnswerTwo) {
-        alert('Si! My first language is Spanish.')
-        // Do something
-      } else {
-        alert('Sorry, that\'s wrong')
-        // Do something else
-      }
+        if(answerTwo.toUpperCase() === myAnswerTwo) {
+          alert('Si! My first language is Spanish.')
+          // Do something
+        } else {
+          alert('Sorry, that\'s wrong')
+          // Do something else
+        }
 
-      var answerThree = prompt('What is my favorite sport? Hint: pointy');
-      var myAnswerThree = 'FOOTBALL';
+        var answerThree = prompt('What is my favorite sport? Hint: pointy');
+        var myAnswerThree = 'FOOTBALL';
 
-      if(answerThree.toUpperCase() === myAnswerThree) {
-        alert('Correct! GO HAWKS!!!')
-        // Do something
-      } else {
-        alert('Sorry, that\'s wrong')
-        // Do something else
-      }
+        if(answerThree.toUpperCase() === myAnswerThree) {
+          alert('Correct! GO HAWKS!!!')
+          // Do something
+        } else {
+          alert('Sorry, that\'s wrong')
+          // Do something else
+        }
 
-      // User input must accept either y/n or yes/no responses
-      // With either .toUpperCase() or .toLowerCase() used to validate input
+        // User input must accept either y/n or yes/no responses
+        // With either .toUpperCase() or .toLowerCase() used to validate input
 
         var answerFour = prompt('Is my favorite color blue?');
 
@@ -97,18 +95,15 @@
           alert('Sorry, that\'s wrong')
         }
 
-
-
         var myFavColor = prompt('What is my favorite color?');
         var favColor = ['blue', 'green', 'red'];
 
-
         if (favColor.indexOf(myFavColor.toLowerCase()) ===  -1) {
-        	alert('Not close.')
+          alert('Not close.')
         } else if (favColor.indexOf(myFavColor.toLowerCase()) === 0) {
-        	alert('You got it.')
+          alert('You got it.')
         } else {
-        	alert('You are close.')
+          alert('You are close.')
         }
 
       }
@@ -116,5 +111,4 @@
     </main>
   </div>
 </body>
-
 </html>
