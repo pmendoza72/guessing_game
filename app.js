@@ -81,7 +81,7 @@ function myFunction() {
           }
       }
 
-      userNumber = prompt( "Guess my favorite number. It\'s from 1 to 100." );
+      userNumber = prompt( "Guess my favorite number. It\'s between 1 and 100." );
   } while ( userNumber != myNumber );
 
   alert( "You guessed it!" );
