@@ -61,12 +61,59 @@ h3 {
 }
 
 ul {
-
+  margin: 20px 0 0 30px;
+  padding: 0 0 10px 0;
 }
 
-li {
-  padding-bottom: 5px;
+ul>li {
+  margin-bottom: 5px;
+  list-style: square;
 }
+
+/*
+ol {
+  margin: 20px 0 0 30px;
+  padding: 0 0 10px 0;
+}
+
+ol>li {
+  margin-bottom: 5px;
+}
+*/
+
+ol {
+  counter-reset: li;
+  padding: 0 0 10px 0;
+}
+
+ol>li {
+    margin: 0px 0px 40px 0px;
+    position: relative;
+    padding: 20px 0px 0px 70px;
+    list-style: none;
+    font-weight: bold;
+}
+
+ol>li:before {
+  content:counter(li);
+  counter-increment:li;
+  position:absolute;
+  left:0px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  width:50px;
+  margin-right:8px;
+  padding:10px 0px;
+  color:#fff;
+  background:#000000;
+  font-weight:bold;
+  font-size:20px;
+  text-align:center;
+}
+
+
+
 
 /* By Class name */
 
