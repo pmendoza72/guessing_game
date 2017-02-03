@@ -1,19 +1,21 @@
 /*
 Selector {
-  property: value;
-  property: value;
+property: value;
+property: value;
 } */
 
 /* By Element */
 
 header {
+  background: #d9dce0;
   text-align: center;
   font-family: 'Lato';
   font-size: 50px;
   width: 100%;
   border-bottom: 2px solid #000000;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 0;
 }
 
 header span {
@@ -35,9 +37,12 @@ body {
 }
 
 main {
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-bottom: 40px;
+  position: static;
+  margin: 15px 0 40px 0;
+}
+
+aside {
+  margin: 15px 0 40px 0;
 }
 
 h1, h2, h3, h4 {
@@ -50,9 +55,11 @@ h1 {
 
 h2 {
   font-size: 28px;
+  font-weight: bold;
   border-bottom: 1px solid #e6e6e6;
   max-width: 500px;
   padding-bottom: 10px;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -72,12 +79,12 @@ ul>li {
 
 /*
 ol {
-  margin: 20px 0 0 30px;
-  padding: 0 0 10px 0;
+margin: 20px 0 0 30px;
+padding: 0 0 10px 0;
 }
 
 ol>li {
-  margin-bottom: 5px;
+margin-bottom: 5px;
 }
 */
 
@@ -87,11 +94,11 @@ ol {
 }
 
 ol>li {
-    margin: 0px 0px 40px 0px;
-    position: relative;
-    padding: 20px 0px 0px 70px;
-    list-style: none;
-    font-weight: bold;
+  margin: 0px 0px 40px 0px;
+  position: relative;
+  padding: 20px 0px 0px 70px;
+  list-style: none;
+  font-weight: bold;
 }
 
 ol>li:before {
@@ -112,8 +119,21 @@ ol>li:before {
   text-align:center;
 }
 
+main p {
+  max-width: 600px;
+}
 
+footer {
+  color: #fff;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  background: #000;
+}
 
+a.btn.btn-primary.btn-lg:hover {
+    background-color: #000;
+}
 
 /* By Class name */
 
@@ -122,9 +142,12 @@ ol>li:before {
   font-size: 20px;
 }
 
+
+
 /* By Id */
 
 #page-wrap {
-width: 100%;
-margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }

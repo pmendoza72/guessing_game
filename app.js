@@ -1,13 +1,18 @@
 
 function myFunction() {
 
-  var userName = prompt ('What\'s your name?');
-  alert('Hello ' + userName + '. Thanks for coming to my site!')
+  // Ask and use the user's name
 
-  // WE want to ask the user a question
+  var userName = prompt ('What\'s your name?');
+  alert('Hi ' + userName + '. Thanks for visiting my site!')
+
+  // Guessing Game
+  // We want to ask the user a question
   // Take their answer as input; stored in a var
   // Validate that their answer matches my answer
   // Depending on True or False, provide feedback
+
+  // Question #1
 
   var answerOne = prompt('What country was I born in? Hint: South America');
   var myAnswerOne = 'CHILE';
@@ -20,6 +25,8 @@ function myFunction() {
     // Do something else
   }
 
+  // Question #2
+
   var answerTwo = prompt('What\'s my first language?');
   var myAnswerTwo = 'SPANISH';
 
@@ -30,6 +37,8 @@ function myFunction() {
     alert('Sorry, that\'s wrong')
     // Do something else
   }
+
+  // Question #3
 
   var answerThree = prompt('What is my favorite sport? Hint: pointy');
   var myAnswerThree = 'FOOTBALL';

@@ -2,69 +2,78 @@
 <html>
 <head>
   <title>About Me</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="app.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div id="page-wrap">
-    <header>
-      Pablo Mendoza
-      <span>ADD. COMMIT. PUSH.<br /><a href="">pablo@mendoza.org</a></span>
-    </header>
-    <main>
-      <h2>About Me</h2>
-      <p>I'm a front end web developer at the City of Seattle and currently studying at Code Fellows.  Striving to be the best back end developer I can be.</p>
-      <h2>Work Experience</h2>
-      <h3>Web Developer</h3>
-      <span class="subTitle">City of Seattle</span>
-      <ul>
-        <li>Create, maintain and update City of Seattle webpages.</li>
-        <li>Manage Content Management System.</li>
-        <li>Manage redesign of department websites.</li>
-      </ul>
-      <h3>Desktop End User Support</h3>
-      <span class="subTitle">City of Seattle</span>
-      <ul>
-        <li>2nd Tier Desktop Support</li>
-        <li>Hardware and software support for City of Seattle departments.</li>
-        <li>Technical support service for Mayor's Office.</li>
-      </ul>
-      <h3>Service Desk</h3>
-      <span class="subTitle">City of Seattle</span>
-      <ul>
-        <li>1st Tier technical support.</li>
-        <li>Remote desktop support for City of Seattle departments.</li>
-        <li>Troubleshoot computer and peripheral issues via telephone and email.</li>
-      </ul>
-      <h3>Technical Specialist</h3>
-      <span class="subTitle">El Centro de la Raza</span>
-      <ul>
-        <li>Network administrator supporting servers and workstations.</li>
-        <li>Manage email accounts and user profiles.</li>
-        <li>Worked with vendors in maintaining hardware and software support.</li>
-      </ul>
-      <h2>Volunteer Experience</h2>
-      <p>Board Member: <em>El Centro de la Raza</em></p>
-      <p>Board Member: <em>La Barra Fuerza Verde</em></p>
-      <h2>Top Ten Movies <i class="fa fa-video-camera fa-3" aria-hidden="true"></i></h2>
-      <ol>
-        <li>Karate Kid (1984)</li>
-        <li>Drive</li>
-        <li>Goonies</li>
-        <li>Selena</li>
-        <li>Return of the Jedi</li>
-        <li>Empire Strikes Back</li>
-        <li>La Bamba</li>
-        <li>Firefly</li>
-        <li>Motorcycle Diaries</li>
-        <li>Enter the Dragon</li>
-      </ol>
-      <h2>Projects</h2>
-      <p>Click button to view projects.</p>
-      <button onclick="myFunction()">Guessing Game</button>
-    </main>
-  </div>
+<body id="page-wrap">
+  <header>
+    Pablo Mendoza
+    <!-- <span>ADD. COMMIT. PUSH.<br /><a href="">pablo@mendoza.org</a></span> -->
+  </header>
+  <main class="col-md-8">
+    <h2>About Me</h2>
+    <p>I'm a front end web developer at the City of Seattle and currently studying at Code Fellows.  Striving to be the best back end developer I can be.</p>
+    <h2>Education</h2>
+    <h3>North Seattle College</h3>
+    <span class="subTitle">Associate of Applied Science in Network Administration</span>
+    <h3>Code Fellows</h3>
+    <span class="subTitle">To Be Continued</span>
+    <h2>Work Experience</h2>
+    <h3>Web Developer</h3>
+    <span class="subTitle">City of Seattle</span>
+    <ul>
+      <li>Create, maintain and update City of Seattle webpages.</li>
+      <li>Manage Content Management System.</li>
+      <li>Manage redesign of department websites.</li>
+    </ul>
+    <h3>Desktop End User Support</h3>
+    <span class="subTitle">City of Seattle</span>
+    <ul>
+      <li>2nd Tier Desktop Support</li>
+      <li>Hardware and software support for City of Seattle departments.</li>
+      <li>Technical support service for Mayor's Office.</li>
+    </ul>
+    <h3>Service Desk</h3>
+    <span class="subTitle">City of Seattle</span>
+    <ul>
+      <li>1st Tier technical support.</li>
+      <li>Remote desktop support for City of Seattle departments.</li>
+      <li>Troubleshoot computer and peripheral issues via telephone and email.</li>
+    </ul>
+    <h3>Technical Specialist</h3>
+    <span class="subTitle">El Centro de la Raza</span>
+    <ul>
+      <li>Network administrator supporting servers and workstations.</li>
+      <li>Manage email accounts and user profiles.</li>
+      <li>Worked with vendors in maintaining hardware and software support.</li>
+    </ul>
+    <h2>Volunteer Experience</h2>
+    <p>Board Member: <em>El Centro de la Raza</em></p>
+    <p>Board Member: <em>La Barra Fuerza Verde</em></p>
+    <h2>Projects</h2>
+    <p>Click button to view projects.</p>
+    <p><a onclick="myFunction()" class="btn btn-primary btn-lg" type="button" href="">Guessing Game</a></p>
+  </main>
+  <aside class="col-md-4">
+    <h2>My Goals</h2>
+    <p>To graduate from Code Fellows and weigh options on career.</p>
+    <h2>Top Ten Movies <i class="fa fa-video-camera fa-3" aria-hidden="true"></i></h2>
+    <ol>
+      <li>Karate Kid (1984)</li>
+      <li>Drive</li>
+      <li>Goonies</li>
+      <li>Selena</li>
+      <li>Return of the Jedi</li>
+      <li>Empire Strikes Back</li>
+      <li>La Bamba</li>
+      <li>Firefly</li>
+      <li>Motorcycle Diaries</li>
+      <li>Enter the Dragon</li>
+    </ol>
+  </aside>
+  <script src="app.js"></script>
 </body>
 </html>
