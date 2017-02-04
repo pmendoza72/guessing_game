@@ -20,10 +20,10 @@ function myFunction() {
 
   if(responseOne.toUpperCase() === myAnswerOne) {
     alert('Wow! You got it right. I was born in Chile.');
-    console.log(userName + '\'s guess of ' + responseOne + ' is correct!' )
+    console.log(userName + '\'s guess is correct!' )
   } else {
-    alert('Sorry, that\'s wrong');
-    console.log(userName + '\'s guess of ' + responseOne + ' is wrong!' )
+    alert('Sorry, that\'s wrong. I was born in Chile.');
+    console.log(userName + '\'s guess is wrong!' )
   }
 
   // Question #2
@@ -33,10 +33,10 @@ function myFunction() {
 
   if(responseTwo.toUpperCase() === myAnswerTwo) {
     alert('Si! My first language is Spanish. Great job ' + userName + '!')
-    console.log(userName + '\'s guess of ' + responseTwo + ' is correct.')
+    console.log(userName + '\'s guess is correct.')
   } else {
     alert('Sorry, that\'s wrong')
-    console.log(userName + '\'s guess of ' + responseTwo + ' is wrong!' )
+    console.log(userName + '\'s guess is wrong!' )
   }
 
   // Question #3
@@ -48,8 +48,8 @@ function myFunction() {
     alert('That\'s correct! GO HAWKS!!!')
     console.log(userName + ' guessed correctly that ' + myAnswerThree + ' is my favorite sport. GO HAWKS!!!')
   } else {
-    alert('Sorry, that\'s wrong')
-        console.log(userName + '\'s guess of ' + responseThree + ' is wrong!' )
+    alert('Sorry, that\'s wrong. Football is my favorite followed by futbol aka soccer.')
+    console.log(userName + '\'s guess of ' + responseThree + ' is wrong!' )
   }
 
   // Question #4
@@ -61,44 +61,53 @@ function myFunction() {
 
   if(responseFour.toLowerCase() === 'yes' || responseFour.toLowerCase() === 'y') {
     alert('You guessed right! I have one son who is 21 years old.')
+    console.log(userName + ' guessed right.')
   } else {
     alert('Sorry, that\'s wrong. I do have a son.')
+    console.log(userName + ' guessed wrong.')
   }
 
   // Question #5
   // Multiple right answers
 
-  var responseFive = prompt('Name three of my favorite colors.');
+  var responseFive = prompt('Name anyone of my three favorite colors.');
   var favColor = ['blue', 'green', 'red'];
 
   if (favColor.indexOf(responseFive.toLowerCase()) >  -1) {
-    alert('You got it right. ' + responseFive + ' is one of my favorite colors.')
+    alert('You got it right. ' + responseFive.toUpperCase(0) + ' is one of my favorite colors.')
+    console.log(userName + ' guessed one of my favorite colors correctly.')
   } else {
     alert('Sorry, ' + responseFive + ' is incorrect. Blue, green and red are my favorites.')
+    console.log(userName + ' guessed wrong.')
   }
 
-// Question #6
-// Numeric input and indicate whether the guess is
-// too high or too low
+  // Question #6
+  // Numeric input and indicate whether the guess is
+  // too high or too low
 
-  var userNumber;
+  var numberTries = 0;
+  var userNumber = prompt( "Guess my favorite number. It\'s between 1 and 100." );
   var myNumber = 11;
 
   do {
-
-      if ( userNumber ) {
-          if ( userNumber > myNumber ) {
-              alert( "Your guess was too high." );
-          }
-          else {
-              alert( "Your guess was too low." );
-          }
+    numberTries +=1
+    if ( userNumber ) {
+      if ( userNumber > myNumber ) {
+        alert( "Your guess was too high." );
       }
+      else {
+        alert( "Your guess was too low." );
+      }
+    }
 
-      userNumber = prompt( "Guess my favorite number. It\'s between 1 and 100." );
-  } while ( userNumber != myNumber );
-
+    userNumber = prompt( "Guess again." );
+  } while ( userNumber != myNumber && numberTries < 3);
+if (userNumber === myNumber) {
   alert( "You guessed it!" );
+} else {
+  alert('Sorry, no more tries.');
+}
+
 
 
 }
