@@ -1,4 +1,3 @@
-
 function myFunction() {
 
   // Ask and use the user's name
@@ -35,7 +34,7 @@ function myFunction() {
     alert('Si! My first language is Spanish. Great job ' + userName + '!')
     console.log(userName + '\'s guess is correct.')
   } else {
-    alert('Sorry, that\'s wrong')
+    alert('Sorry, that\'s wrong. My first language is Spanish.')
     console.log(userName + '\'s guess is wrong!' )
   }
 
@@ -74,7 +73,7 @@ function myFunction() {
   var favColor = ['blue', 'green', 'red'];
 
   if (favColor.indexOf(responseFive.toLowerCase()) >  -1) {
-    alert('You got it right. ' + responseFive.toUpperCase(0) + ' is one of my favorite colors.')
+    alert('You got it right. It is one of my favorite colors.')
     console.log(userName + ' guessed one of my favorite colors correctly.')
   } else {
     alert('Sorry, ' + responseFive + ' is incorrect. Blue, green and red are my favorites.')
@@ -86,27 +85,25 @@ function myFunction() {
   // too high or too low
 
   var numberTries = 0;
-  var userNumber = prompt( "Guess my favorite number. It\'s between 1 and 100." );
   var myNumber = 11;
 
   do {
     numberTries +=1
-    if ( userNumber ) {
+    var userNumber = prompt( "Guess my favorite number. It\'s between 1 and 100." );
       if ( userNumber > myNumber ) {
         alert( "Your guess was too high." );
       }
-      else {
+      else if ( userNumber < myNumber ) {
         alert( "Your guess was too low." );
       }
+    } while ( userNumber != myNumber && numberTries < 4);
+
+    if (userNumber = myNumber) {
+      alert( "You guessed it!" );
+    } else {
+      alert('Sorry, no more tries.');
     }
 
-    userNumber = prompt( "Guess again." );
-  } while ( userNumber != myNumber && numberTries < 3);
-if (userNumber === myNumber) {
-  alert( "You guessed it!" );
-} else {
-  alert('Sorry, no more tries.');
-}
 
 
 
