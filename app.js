@@ -1,11 +1,13 @@
 function myFunction() {
 
   // Ask and use the user's name
-
+  function someFuncQuestionOne() {
   var userName = prompt ('What\'s your name?');
   alert('Hi ' + userName + '. Let\'s play a guessing game!');
   console.log('User\'s name is ' + userName + '.')
+  }
 
+  someFuncQuestionOne();
   // Guessing Game
   // We want to ask the user a question
   // Take their answer as input; stored in a var
